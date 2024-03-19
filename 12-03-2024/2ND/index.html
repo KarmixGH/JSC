@@ -1,0 +1,113 @@
+<html>
+
+<head>
+  <title>fr</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <style>
+    form {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+
+    .website {
+      margin-top: 20px;
+    }
+
+    table {
+      transform: translate(-25%);
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th,
+    td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+
+<body>
+
+  <main>
+
+    <form name="userForm">
+
+      <label>Name: <input type="text" name="name" required></label><br>
+
+      <label>Nickname: <input type="text" name="nickname"></label><br>
+
+      <label>Email: <input type="email" name="email" required></label><br>
+
+      <label>Address: <input type="text" name="address" required></label><br>
+
+      <label>Phone: <input type="tel" name="phone" required></label><br>
+
+      <label>Website: <input type="text" name="website"></label><br>
+
+      <label>Gender:
+        <input type="radio" name="gender" value="male" required> Male
+        <input type="radio" name="gender" value="female" required> Female
+      </label><br>
+
+      <input type="submit" value="Submit">
+
+
+      <table>
+
+        <thead>
+          <tr>
+            <th>id</th>
+            <th>name</th>
+            <th>nickname</th>
+            <th>email</th>
+            <th>address</th>
+            <th>phone</th>
+            <th>website</th>
+          </tr>
+        </thead>
+
+        <tbody class="users-list">
+
+        </tbody>
+      </table>
+
+    </form>
+
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>

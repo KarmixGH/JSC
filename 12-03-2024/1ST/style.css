@@ -1,0 +1,29 @@
+main {
+  width: 600px;
+  margin: 10px auto;
+  font-size: 30px;
+  border:1px solid green;
+  display: flex;
+  flex-direction: column;
+}
+table,
+thead,
+tbody,
+tr,td,th {
+  border-collapse: collapse;
+  border: 1px solid red;	
+  font-size: 35px;	
+};
+table{			
+  display: block;	
+  width:100%;
+}
+button,input,select{
+  font-size: 25px;
+}
+select{
+display: none;
+}
+select.active{
+display: initial;
+}

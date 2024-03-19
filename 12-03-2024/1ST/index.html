@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <title>fr</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+  <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <main>
+      <form class="add-to-do">
+        <label>
+          add new item
+		  <br>
+          <input type="text" />
+        </label>
+        <select >
+          <option value=true>active</option>
+          <option value=false>completed</option>
+        </select>
+		<button class="btn-add">add new</button>
+      </form>
+      <table>
+        <thead>
+          <tr>
+            <th>id</th>
+            <th>title</th>
+            <th>status</th>
+            <th>actions</th>
+          </tr>
+        </thead>
+        <tbody class="to-do-list">
+			
+        </tbody>
+      </table>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
