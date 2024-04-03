@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currencies</title>
+</head>
+<body>
+    <h1>Currencies</h1>
+    <form>
+        <div style="display: flex; flex-direction: column; gap: 10px;">
+            <div>
+                <input type="number" value="1" min="0" id="amount-1">
+                <select id="select-1"></select>    
+            </div>
+            <div>
+                <input type="text" id="amount-2" disabled>
+                <select id="select-2"></select>    
+            </div>
+        </div>
+        <button style="margin-top: 10px;" id="swapBtn">Reverse</button>
+    </form>
+    <br>
+
+    <script type="module" src="./main.js"></script>
+</body>
+</html>
