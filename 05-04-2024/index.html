@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main>
+
+        <div class="whosTurn">
+            <div class="LogoOfTicTacToe">
+                <img src="./imgs/Group 2.svg" alt="">
+            </div>
+            <div style="color: white; font-size: larger;" class="text"> Turn: <span id="spanWho"> </span></div>
+            <button class="btnNewGame" id="btnNewGame"> <img src="./imgs/Redo.svg" alt=""></button>
+        </div>
+
+        <div class="blockArea" id="blockArea">
+            <div class="blockItem"></div>
+            <div class="blockItem"></div>
+            <div class="blockItem"></div>
+
+            <div class="blockItem"></div>
+            <div class="blockItem"></div>
+            <div class="blockItem"></div>
+
+            <div class="blockItem"></div>
+            <div class="blockItem"></div>
+            <div class="blockItem"></div>
+        </div>
+
+        <div class="whosWinner" id="whosWinner">
+            <div style="color: white; font-size: larger;" class="textWin"><span id="spanWinner"></span></div>
+        </div>
+
+        <div class="winRate">
+
+            <div class="X-win-count"></div>
+            <div class="tie-count"></div>
+            <div class="O-win-count"></div>
+
+        </div>
+
+        <div class="overlay">
+            <div class="shadow">
+                <div class="WinnerIs">
+                    
+                </div>
+                <div class="WinCount">
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+    <script type="module" src="./script.js"></script>
+</body>
+
+</html>

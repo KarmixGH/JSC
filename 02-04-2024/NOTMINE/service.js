@@ -3,10 +3,11 @@ import{HtmlElement} from './domElements.js'
 
 
 async function getData(endPoint){
-    const url=B_URL+endPoint;
-    const data= await fetch(url);
+    const url = B_URL + endPoint;
+    const data = await fetch(url);
     const result = await data.json();
-    return result    
+    loader.style.display = "none";
+    return result;   
 }
 
 export async function getCurrency(code){
@@ -37,6 +38,3 @@ export function renderOptions(suportedCodeArray,currency1,currency2){
     });
 }
 
-
-
-        

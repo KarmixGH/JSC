@@ -1,6 +1,7 @@
 import { getCurrency, getSupported, renderOptions } from './service.js';
 import { HtmlElement } from './domElements.js';
 
+const loader = document.getElementById("loader")
 
 let rate = null;
 let currency1 = null;

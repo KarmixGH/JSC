@@ -1,0 +1,168 @@
+body{
+    background-color:#1A2A33;
+}
+
+main{
+    display: flex;
+    width: 100%;
+    height: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    flex-direction: column;
+    align-items: center;
+}
+
+.whosTurn{
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 500px;
+}
+
+#spanWho{
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.blockArea{
+    display: flex;
+    width: 500px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+    flex-wrap: wrap;
+}
+
+.blockItem{
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    padding: 8px;
+    width: 140px;
+    border-radius: 24px;
+    height: 140px;
+    margin: 5px;
+    justify-content: center;
+    background-color: #1f3641;
+    color: white;
+}
+
+.blockItem:hover{
+    -webkit-box-shadow: inset 0px 0px 90px -37px rgba(69, 162, 157, 0.7);
+    -moz-box-shadow: inset 0px 0px 90px -37px rgba(69,162,158,0.7);
+    box-shadow: inset 0px 0px 90px -37px rgba(69,162,158,0.7);
+}
+
+.X{
+    background-image: url(./imgs/Cross.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.O{
+    background-image: url(./imgs/Circle.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.winColor{
+    background-color: rgba(48, 158, 153, 0.4) ;
+    color: white;
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.whosWinner{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.textWin{
+    font-size: 25px;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+#spanWinner{
+    font-size: 24px;
+}
+
+.btnNewGame{
+    background: #A8BFC9;
+    border-radius: 12px;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.winRate{
+    margin-top: 25px;
+    display: none;
+    align-items: center;
+    width: 500px;
+    justify-content: space-around;
+}
+
+.X-win-count{
+    width: 150px;
+    height: 65px;
+    background-color: #45A29E;
+    border-radius: 20px;
+}
+
+.tie-count{
+    width: 150px;
+    height: 65px;
+    background-color: #A8BFc9;
+    border-radius: 20px;
+}
+
+.O-win-count{
+    width: 150px;
+    height: 65px;
+    background-color: #F2B137;
+    border-radius: 20px;
+}
+
+
+.overlay{
+    display: none;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.WinnerIs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    background-color: #1f323d;
+    padding-top: 2%;
+    color: white;
+}
+
+.WinCount{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    background-color: #1f323d;
+    padding-bottom: 2%;
+    color: white;
+}
+
+.shadow{
+    -webkit-box-shadow: 0px 0px 300px 200px rgb(9, 17, 20);
+    -moz-box-shadow: 0px 0px 300px 200px rgba(18,30,36,1);
+    box-shadow: 0px 0px 300px 200px rgb(11, 21, 26);
+}
