@@ -1,0 +1,13 @@
+<!-- <app-input-output-example [title]="parentTitle"> </app-input-output-example>
+<app-input-output-example [titleTwo]="secondParentTitle" [colorChange]="styledChild"> </app-input-output-example>
+
+<button (click)="nameChange()">Button 1</button>
+<br><br>
+<button (click)="ChangeNameAndColor()">Button 2</button> -->
+
+
+
+
+<app-input-output-example (emitTitle)="updateTitle($event)"> </app-input-output-example>
+
+<p>{{parentTitleTwo}}</p>

@@ -1,0 +1,18 @@
+<table *ngIf="toDoList.length; else elseBlocke">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let todo of toDoList; index as i">
+            <td>{{ i + 1 }}</td>
+            <td>{{ todo }}</td>
+        </tr>
+    </tbody>
+</table>
+
+<ng-template #elseBlocke>
+    <p> FRFRFRFRFRFRFR </p>
+</ng-template>
